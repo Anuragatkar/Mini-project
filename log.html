@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="log.css"/>
+        <link rel="stylesheet" href="nav.css"/>
+        <script src="nav.js"></script>
+        <title > Flipkart  </title>
+        <style>
+            .grid{ background-color:azure;
+                   display:grid;
+                   grid-template-columns: 300px 300px 300px 300px;
+                   justify-content: space-evenly;
+                 }   
+            .h{
+                background-color: aquamarine;
+                padding: 10px;
+                margin: 10px;
+            }
+            .road{
+                display: inline;
+                padding: 20px;
+                
+            }
+            .flip{
+                background-color: cadetblue;
+                padding: 20px 20px 5px 20px;
+                
+
+            }
+            .t{
+                margin:1px;
+                padding-left: 40px;
+                padding-right: 20px;
+            }
+            .d{margin: 1px;}
+            .mac{  background-color:azure;
+                   display:grid;
+                   grid-template-columns: 300px 300px 300px 300px ;
+                   justify-content: center;
+                   }
+        </style>
+    </head>
+        <body onload="load()">
+        <br>
+        <br>
+        <br>
+        <main>
+            <div class="slideshow">
+            <div class="slide">
+             <img class="img" src="2.jpg">
+             <h1 class="title"> First Slider</h1>
+            </div>
+           <div class="slide">
+            <img class="img" src="3.jpg">
+            <h1 class="title"> Second Slider</h1>
+            </div>
+            <div class="slide">
+                <img class="img" src="4.jpg">
+                <h1 class="title"> Third Slider</h1>
+            </div>
+        </div>
+        <a onclick="goslide(-1)" class="prev">&#10094</a>
+        <a onclick="goslide(1)" class="next">&#10095</a>
+        <br>
+        </section>
+        <section>
+        <div class="navbar">
+            <ul>
+                <li> Home </li>
+                <li class="t"> About us</li>
+                <li> <button class="login" id="login">Login </button> </li>
+                <li> <input type="text" placeholder="Search Here" class="t"> </li>
+                <li> <input type="submit" value="search" class="d"> </li>
+            </ul>
+        </div>
+        
+        <div class="main" id="model">
+            <div class="containt">
+                <span class="close" id="close"> X </span>
+                <input type="email"name="email"id="email" placeholder="Enter Email"/>
+                <br>
+                <input type="password"name="pass"id="pass" placeholder="Enter Password"/>
+                <br>
+                <div class="button">
+                    <button class="btn" onclick="mylogin()">Log in Here</button>
+                </div>
+            </div>
+         </div>
+        <script src="log.js"></script></section>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <section>
+            <section><br>
+                <h3 class="h" style="text-align: center"> Latest Shoes Collection </h3>
+                <div class="mac">
+                    <div ><img src="ni.jfif" width="30%" height="100px"><p>Nike</p> </div>
+                    <div ><img src="8.jfif" width="30%" height="80px"> <p>Addidas</p> </div>
+                    <div ><img src="9.jpg" width="40%" height="70px"> <p> Puma </p></div>
+                    <div ><img src="77.jpg" width="40%" height="80px"> <p> Vans </p></div>
+                    <div ><img src="q.jpg" width="40%" height="80px"> <p> Asics</p></div>
+                    <div ><img src="w.jfif" width="40%" height="80px"> <p> White Nike </p></div>
+                    <div ><img src="e.jfif" width="40%" height="80px"> <p> Red Nike </p></div>
+                </div>
+    
+         </section>
+         <section>
+            <h3  class="h" style="text-align: center"> Electronic Products </h3>
+            <div class="grid">
+            <div ><img src="3.jpg" width="70%" height="100"> <p>Apple Macbook</p> </div>
+            <div ><img src="4.jpg" width="70%" height="100"> <p>Iphone SR</p></div>
+            <div ><img src="re.jpg" width="70%" height="100"> <p>Headphones</p></div>
+            <div ><img src="6.jpg" width="90%" height="100"> <p>Iphone 11</p></div>
+            <div ><img src="hea.jpg" width="70%" height="100"> <p>Boat Headphones</p></div>
+            <div ><img src="max.jpg" width="90%" height="100"> <p>Iphone 12</p></div>
+            <div ><img src="ma.jpg" width="70%" height="100"> <p>Macbook</p></div>
+            <div ><img src="g.jfif" width="70%" height="100"> <p>Iphone 8</p></div>
+            </div>
+     </section>
+        </main><br>
+        <footer>
+            <div class="flip">
+            <h3 class="road" >About</h3>
+            <h3 class="road">Contact us </h3>
+            <h3 class="road"> Flipkart Sales </h3>
+            <h3 class="road"> Policy</h3>
+            <h3 class="road"> Email us</h3>
+            <h3 class="flip"> copyright by Flipkart</h3>
+        </div>
+        </footer>
+    </body>
+</html>

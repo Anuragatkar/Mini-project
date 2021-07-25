@@ -1,0 +1,14 @@
+body{
+    padding: 10px;
+}      
+.grid{
+    display:flex;
+    flex-direction:row;
+    align-items: center;
+    
+
+}   
+
+}
+
+        
